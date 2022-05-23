@@ -5,26 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
   <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
   <script src="components/loader.js"></script>
+  <script src="components/comandos.js"></script>
   <script src="lib/onsenui/js/onsenui.min.js"></script>
 
   <link rel="stylesheet" href="components/loader.css">
-  <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
-  <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+  <link hrel="https://cdn.jsdelivr.net/npm/booststrap@5.1.3/dist/css/booststrap.min.css" rel="stylesheet"
+  integrity="sha384-1BmE4kWBq78iYhF1dvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqy12vZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 
-  <script>
-    ons.ready(function() {
-      console.log("Onsen UI is ready!");
-    });
+  </head>
+  <body>
+<div class="container">
+    <div class="row">
+        <div class="col">
+         <div class="form-group">
+             <div class="d-grip gap-2">
+          <button classs="bnt bnt-primary" id="scan"> Ler código</button>
+           </div>
+         </div>      
+       </div> 
+     </div>       
+    </div>                
+         <div class="row">
+           <div class="col">
+              <div class="dados">
 
-    if (ons.platform.isIPhoneX()) {
-      document.documentElement.setAttribute('onsflag-iphonex-portrait', '');
-      document.documentElement.setAttribute('onsflag-iphonex-landscape', '');
-    }
-  </script>
-</head>
-<body>
-  <br />
-  This is a template for Onsen UI app.
+          </div>
+        </div>       
+       </div>       
 </body>
 </html>
